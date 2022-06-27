@@ -1,11 +1,12 @@
+import React from 'react';
 import { Navigation } from './routes/Navigation';
 
 function App() {
-  return (
-    <>
-      <Navigation />
-    </>
-  );
+	return (
+		<>
+			<Navigation />
+		</>
+	);
 }
 
 export default App;
