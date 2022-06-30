@@ -1,3 +1,4 @@
+import React from 'react';
 import { ProductButtons, ProductCard, ProductImage, ProductTitle } from '../components';
 import '../styles/custom-styles.css';
 import { useShoppingCart } from '../hooks/useShoppingCart';
