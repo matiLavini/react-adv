@@ -9,13 +9,13 @@ interface Props {
 	[x: string]: any;
 }
 
-export const MyTextInput = ({ label, ...props }: Props) => {
+export const MyTextInput = ({ label, type, placeholder, ...props }: Props) => {
 	const [field] = useField(props);
 
 	return (
 		<>
 			<label htmlFor={props.id || props.name}>{label}</label>
-			<input className='text-input' {...field} />
+			<input className='text-input' {...field} type={type ? type : 'text'} placeholder={placeholder ? placeholder : ''} />
 			<ErrorMessage name={props.name} component='span' />
 		</>
 	);
